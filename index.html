@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="name()">
+    <div class="header">
+        <div class="nav-btn" id="nav-btn">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
+        <div class="main-heading">
+            Contacts
+        </div>
+        <div class="coins-btn" id="deletebtn">
+            <img src="delete.png" alt="">
+        </div>
+    </div>
+    <nav class="main-nav margin-left-120vw" id="main-nav">
+        <div class="version-info">v 1.21</div>
+        <div class="profile">
+            <div class="prof-icon"></div>
+            <div class="profile-head"><a href="profile.html"> Your Profile</a></div>
+        </div>
+        <div class="app-setting" id="setting-btn">
+            <span> App Settings</span>
+        </div>
+    </nav>
+    <div class="add-btn rotate0" id="add-btn">
+        <div class="plus-h"></div>
+        <div class="plus-v"></div>
+    </div>
+    <form class="add-new none" id="add-new">
+        <p class="add-new-heading">New Contact</p>
+        <input type="text" name="name" placeholder="Full name here" id="Contact-Name">
+        <input type="number" name="number" placeholder="Number here" id="Contact-Number">
+        <button>Create Contact</button>
+    </form>
+    <input type="text" class="main-search" name="Search" placeholder="Search contacts" id="search-input" onkeyup="searchcontacts()">
+    <div class="contacts-container">
+    <ul id="list">
+        <!-- <li id="li"><a>haseeb</a>
+        <p>0335</p></li>
+        <li id="li"><a>bilal</a>
+            <p>0335</p></li> -->
+    </ul> 
+    </div>
+
+
+    <div class="none" id="setting-cont">
+        <header class="set-con-head"><div class="heading">Settings</div></header>
+        <div class="set-cont-body">
+        <div class="setting-btns">
+        <button class="btn" id="save">Done</button>
+        <button class="btn" id="cancel">Cancel</button>
+        </div>
+        </div>
+    </div>
+    <script src="App.js"></script>
+    <script src="setting.js"></script>
+</body>
+</html>
